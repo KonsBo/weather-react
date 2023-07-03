@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+// import Forecast from "./Forecast";
 import "./Weather.css";
 
 // export default function Weather(props) {
@@ -90,7 +90,13 @@ export default function Weather() {
         <div className="weather-temperature">
           <strong>{weather.temperature}</strong>
           <span className="units">
-            <a href="/">°C</a> | <a href="/">°F</a>
+            <a href="/" rel="">
+              °C
+            </a>{" "}
+            |{" "}
+            <a href="/" rel="">
+              °F
+            </a>
           </span>
         </div>
 
@@ -109,7 +115,7 @@ export default function Weather() {
 
         <p className="footer">
           <a
-            href="https://github.com/JackieTsakie/weather_project"
+            href="https://github.com/KonsBo/weather-react"
             target="_blank"
             rel="noreferrer"
           >
